@@ -27,6 +27,6 @@ The `msg` variable should hold an object with the following params:
 **customCss** - Adding a custom CSS object to override the default CSS (optional)
 
 ## Usage Example script
-`var msg = {'head':'Hello!','body':'This is my Popup-box','btn':'Confirm','action':'console.log("the Popup-box action works!")','bottom':'Some text under the button','customCss':{"border-radius": "10px","background-color":"gray"}}`
+`var msg = {'head':'Hello!','body':'This is my Popup-box','btn':'Confirm','action':'console.log("the Popup-box action works!")','bottom':'Some text under the button','customCss':{"border-radius": "10px","background-color":"gray"}};`
 
-`popUpBox(msg)`
+`popUpBox(msg);`
