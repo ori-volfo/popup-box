@@ -1,0 +1,77 @@
+.center{
+    text-align: center;
+}
+#popup-box{
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+#popup-box .popup-content{
+    background-color: #fefefe;
+    border: 1px solid #097bcd;
+    margin: 15% auto;
+    padding: 20px;
+    width: 50%;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+#popup-box .close{
+    color: black;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#popup-box .close:hover, #popup-overlay .close:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#popup-box .popup-content .popup-body{
+    margin: 40px 10px;
+    font-size: 16px;
+}
+
+#popup-box .popup-content button{
+    padding: 10px 20px !important;
+}
+
+#popup-box .live-chat, #popup-box #telephone{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+#popup-box h1{
+    font-size: 28px;
+}
+#popup-box .popup-bottom:empty{
+    display: none;
+}
+#popup-box .popup-bottom{
+    margin-top: 30px;
+}
+#popup-box .popup-bottom a.new-around{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 768px){
+    #popup-box .popup-content{
+        width: 80%;
+    }
+    #popup-box h1{
+        font-size: 26px;
+    }
+}
