@@ -28,6 +28,12 @@ var popUpBox = (function(msg){
         if(msg.customCss){
             $popUp.find('.popup-content').css(msg.customCss);
         }
+        if(msg.customBodyCss){
+            $popUp.find('.popup-body').css(msg.customBodyCss);
+        }
+        if(msg.customClass){
+            $popUp.addClass(msg.customClass);
+        }
         if(msg.bottom){
             $popUp.find('.popup-bottom').html(msg.bottom);
         }
